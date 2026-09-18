@@ -28,16 +28,6 @@ tests** · **Docker** · **CI green**.
 
 ---
 
-## 📸 See it in action
-
-Live view of **RELIANCE.NS** — quote bar, candlestick + indicator chart,
-multi-horizon AI forecast with confidence bands, forecast-vs-reality log, news
-sentiment, market alerts, **NSE options chain**, relative strength and the
-scanner / sector heatmap — all on one page:
-
-![Full dashboard](./docs/screenshot-full.png)
-
-
 > ⚡ **Why it's different:** most "AI stock predictor" demos leak a single
 > confident price and quietly lie. MarketMitra trains a **5-net MLP ensemble per
 > request**, backtests it on the last 60 days, and reports **1 / 5 / 10-day
