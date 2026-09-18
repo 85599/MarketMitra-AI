@@ -11,8 +11,6 @@ Indian underlyings are first-class: NSE/BSE equities and the **NIFTY / BANKNIFTY
 FINNIFTY** indices get a full options chain scraped from NSE India, while US-listed
 names use Yahoo Finance options.
 
-Inspired by [Aryan2624/StockVision-AI](https://github.com/Aryan2624/StockVision-AI),
-rebuilt with a much heavier feature set.
 
 ## Stack
 
