@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: ./backend
+    container_name: marketmitra-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist the prediction log across restarts.
+      - backend-data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MM_DB_PATH=/app/data/predictions.db
+
+  frontend:
+    build: ./frontend
+    container_name: marketmitra-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  backend-data:
